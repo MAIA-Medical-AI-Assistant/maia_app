@@ -27,7 +27,7 @@ MAIA currently offers the following key features:
 3. **Lung CT Scan Analysis**: Check for various types of lung cancer and other pulmonary conditions.
 4. **Skin Lesion Image Analysis**: Determine if moles are benign or malignant with high reliability.
 5. **Chest X-Ray Analysis**: Diagnose various lung conditions from chest X-ray images.
-6. **AI-Powered Q&A**: Get detailed information about the diagnosis using MAIA's advanced natural language processing capabilities.
+6. **AI-Powered Q&A**: Get detailed information about the diagnosis using MAIA.
 
 ## Technology Stack
 
