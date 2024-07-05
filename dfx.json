@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "maia_app_backend": {
+      "candid": "src/maia_app_backend/maia_app_backend.did",
+      "package": "maia_app_backend",
+      "type": "rust"
+    },
+    "maia_app_frontend": {
+      "dependencies": [
+        "maia_app_backend"
+      ],
+      "source": [
+        "src/maia_app_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "maia_app_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
