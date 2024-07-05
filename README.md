@@ -1,61 +1,110 @@
-# `maia_app`
+# MAIA: Medical AI Assistant on Internet Computer
 
-Welcome to your new `maia_app` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+![MAIA Logo](maia_logo.png)
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technology Stack](#technology-stack)
+4. [Getting Started](#getting-started)
+5. [Usage](#usage)
+6. [Roadmap](#roadmap)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Contact](#contact)
 
-To learn more before you start working with `maia_app`, see the following documentation available online:
+## Introduction
 
-- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
-- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
-- [Rust Canister Development Guide](https://internetcomputer.org/docs/current/developer-docs/backend/rust/)
-- [ic-cdk](https://docs.rs/ic-cdk)
-- [ic-cdk-macros](https://docs.rs/ic-cdk-macros)
-- [Candid Introduction](https://internetcomputer.org/docs/current/developer-docs/backend/candid/)
+MAIA (Medical AI Assistant) is an AI-powered medical diagnostic tool developed on the Internet Computer. Our aim is to leverage artificial intelligence to enhance medical diagnostics, provide reliable second opinions, and assist healthcare professionals in making their diagnostic processes more efficient and accurate.
 
-If you want to start working on your project right away, you might want to try the following commands:
+MAIA aims to bridge the gap between AI technologies and practical medical applications, offering a user-friendly interface for both patients and healthcare providers.
 
-```bash
-cd maia_app/
-dfx help
-dfx canister --help
-```
+## Features
 
-## Running the project locally
+MAIA currently offers the following key features:
 
-If you want to test your project locally, you can use the following commands:
+1. **Brain CT Scan Analysis**: Detect glioma, meningioma, and pituitary tumors with high accuracy.
+2. **Kidney CT Scan Analysis**: Identify cysts, stones, or tumors in kidney scans with precision.
+3. **Lung CT Scan Analysis**: Check for various types of lung cancer and other pulmonary conditions.
+4. **Skin Lesion Image Analysis**: Determine if moles are benign or malignant with high reliability.
+5. **Chest X-Ray Analysis**: Diagnose various lung conditions from chest X-ray images.
+6. **AI-Powered Q&A**: Get detailed information about the diagnosis using MAIA's advanced natural language processing capabilities.
 
-```bash
-# Starts the replica, running in the background
-dfx start --background
+## Technology Stack
 
-# Deploys your canisters to the replica and generates your candid interface
-dfx deploy
-```
+- **Frontend**: React.js with Ant Design UI framework
+- **Backend**: Internet Computer (IC) canister smart contracts
+- **AI Models**: ONNX (Open Neural Network Exchange) models
+- **Authentication**: Internet Identity
+- **Animation**: Framer Motion
 
-Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
+## Getting Started
 
-If you have made changes to your backend canister, you can generate a new candid interface with
+To get started with MAIA, follow these steps:
 
-```bash
-npm run generate
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/MAIA-Medical-AI-Assistant/maia_app.git
+    ```
+2. Install dependencies:
+    ```bash
+    cd maia_app
+    npm install
+    ```
+3. Set up the Internet Computer SDK (follow instructions on the DFINITY website).
+4. Deploy the canisters:
+    ```bash
+    dfx start --clean --background
+    dfx deploy
+    ```
+5. Start the development server:
+    ```bash
+    npm start
+    ```
 
-at any time. This is recommended before starting the frontend development server, and will be run automatically any time you run `dfx deploy`.
+## Usage
 
-If you are making frontend changes, you can start a development server with
+1. Navigate to the MAIA web application.
+2. Connect your Internet Identity.
+3. Choose the type of medical image you want to analyze.
+4. Upload the image.
+5. View the AI-generated diagnosis and additional information.
+6. Use the AI-powered Q&A feature for more details about your diagnosis.
 
-```bash
-npm start
-```
+## Roadmap
 
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
+### Q1 2024: Base Model Deployments (Completed)
+- Deploy brain CT scan model for tumor detection
+- Implement kidney CT scan analysis for tumors, cysts and stones
+- Launch lung CT scan model for lung cancer detection
+- Enhance skin lesion detection for skin cancer
+- Deploy chest X-ray analysis for various lung conditions
+- Develop AI-powered Q&A for diagnosis information
 
-### Note on frontend environment variables
+### Q2 2024: Expanding Capabilities
+- Implement bone health assessment
+- Add blood test analysis
+- Optimize AI models for better accuracy
+- Add ultrasound scan analysis
+- Improve skin lesion detection
+- Start mobile UI enhancements for better accessibility
 
-If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
+### Q3 2024: Segmentation and Detection
+- Implement tumor segmentation in brain CT scans
+- Add nodule detection and segmentation for lung CT scans
+- Develop lesion boundary detection for skin images
+- Introduce bone fracture localization in X-rays
+- Integrate segmentation results into user interface for visual feedback
 
-- set`DFX_NETWORK` to `ic` if you are using Webpack
-- use your own preferred method to replace `process.env.DFX_NETWORK` in the autogenerated declarations
-  - Setting `canisters -> {asset_canister_id} -> declarations -> env_override to a string` in `dfx.json` will replace `process.env.DFX_NETWORK` with the string in the autogenerated declarations
-- Write your own `createActor` constructor
+## Contact
+
+- Website: [https://s4gzj-baaaa-aaaam-act7a-cai.icp0.io/](https://s4gzj-baaaa-aaaam-act7a-cai.icp0.io/)
+- Email: contact.maia.healthcare@gmail.com
+- Twitter: [@MAIA_ICP](https://twitter.com/MAIA_ICP)
+- Forum: [DFINITY Forum Post](https://forum.dfinity.org/t/introducing-maia-medical-ai-assistant-on-internet-computer/32022)
+
+For a video demonstration of MAIA, check out our [Demo Video](https://www.loom.com/share/cf622c2986ed4665917bd57f644da3f9?sid=1188141d-bd3f-4d4b-8861-de31a09461a5).
+
+---
+
+MAIA - Medical AI Assistant on the Internet Computer

@@ -1,3 +1,20 @@
+type Diagnose = record {
+    label: text;
+};
+
+type DiagnoseFailed = record {
+    message: text;
+};
+
+type DiagnoseResult = variant {
+    Ok: vec Diagnose;
+    Err: DiagnoseFailed;
+};
+
 service : {
-    "greet": (text) -> (text) query;
+    lung_disease_diagnose : (img: blob) -> (DiagnoseResult);
+    lung_ct_diagnose : (img: blob) -> (DiagnoseResult);
+    kidney_ct_diagnose : (img: blob) -> (DiagnoseResult);
+    brain_ct_diagnose : (img: blob) -> (DiagnoseResult);
+    skin_lesion_diagnose : (img: blob) -> (DiagnoseResult);
 }

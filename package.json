@@ -14,5 +14,16 @@
   "type": "module",
   "workspaces": [
     "src/maia_app_frontend"
-  ]
+  ],
+  "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@connect2ic/core": "^0.2.0-beta.24",
+    "@connect2ic/react": "^0.2.0-beta.24",
+    "@google/generative-ai": "^0.14.1",
+    "@react-three/drei": "^9.108.1",
+    "@react-three/fiber": "^8.16.8",
+    "antd": "^5.19.1",
+    "framer-motion": "^11.2.13",
+    "react-transition-group": "^4.4.5"
+  }
 }
