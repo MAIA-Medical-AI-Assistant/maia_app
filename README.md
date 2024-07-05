@@ -10,9 +10,7 @@
 5. [Getting Started](#getting-started)
 6. [Usage](#usage)
 7. [Roadmap](#roadmap)
-8. [Contributing](#contributing)
-9. [License](#license)
-10. [Contact](#contact)
+8. [Contact](#contact)
 
 ## Introduction
 
