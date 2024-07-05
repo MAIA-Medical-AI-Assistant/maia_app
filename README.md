@@ -1,6 +1,6 @@
 # MAIA: Medical AI Assistant on Internet Computer
 
-![MAIA Logo](maia_logo.png)
+![MAIA Logo]([maia_logo.png](https://github.com/MAIA-Medical-AI-Assistant/maia_app/blob/master/logo.png))
 
 ## Table of Contents
 1. [Introduction](#introduction)
