@@ -14,7 +14,7 @@
 
 ## Introduction
 
-MAIA (Medical AI Assistant) is an AI-powered medical diagnostic tool developed on the Internet Computer. Our aim is to leverage artificial intelligence to enhance medical diagnostics, provide reliable second opinions, and assist healthcare professionals in making their diagnostic processes more efficient and accurate.
+MAIA (Medical AI Assistant) is an AI-powered medical diagnostic tool developed on the Internet Computer. MAIA aims to leverage artificial intelligence to enhance medical diagnostics, provide reliable second opinions, and assist healthcare professionals in making their diagnostic processes more efficient and accurate.
 
 MAIA aims to bridge the gap between AI technologies and practical medical applications, offering a user-friendly interface for both patients and healthcare providers.
 
