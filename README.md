@@ -6,12 +6,13 @@
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Technology Stack](#technology-stack)
-4. [Getting Started](#getting-started)
-5. [Usage](#usage)
-6. [Roadmap](#roadmap)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
+4. [Flowchart](#flowchart)
+5. [Getting Started](#getting-started)
+6. [Usage](#usage)
+7. [Roadmap](#roadmap)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Contact](#contact)
 
 ## Introduction
 
@@ -38,6 +39,8 @@ MAIA currently offers the following key features:
 - **Authentication**: Internet Identity
 - **Animation**: Framer Motion
 
+## Flowchart
+![MAIA Flowchart](https://github.com/MAIA-Medical-AI-Assistant/maia_app/blob/master/maia_flowchart.png)
 ## Getting Started
 
 To get started with MAIA, follow these steps:
